@@ -44,14 +44,25 @@ var studenti = [
 
 
 
+
+
+//Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+
+var nuovoStudente = {
+    nome: prompt("inserisci il nome dell'alunno"),
+    cognome: prompt("inserisci il cognome dell'alunno"),
+    eta: prompt("inserisci l'etá dell'alunno"),
+};
+
+studenti.push(nuovoStudente);
+
+
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
 for (var i = 0; i < studenti.length; i++) {
-    
+   
     console.log(studenti[i]["nome"]);
     console.log(studenti[i]["cognome"]);
     
 };
-
-//Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-
