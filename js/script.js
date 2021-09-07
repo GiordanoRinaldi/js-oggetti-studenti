@@ -61,8 +61,6 @@ studenti.push(nuovoStudente);
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
 for (var i = 0; i < studenti.length; i++) {
-   
-    console.log(studenti[i]["nome"]);
-    console.log(studenti[i]["cognome"]);
-    
+    var studente = studenti[i];
+    console.log(`${studente.nome} ${studente.cognome}`);
 };
